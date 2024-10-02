@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.Home {
+    position: relative;
+    min-height: 100vh;
+    background-image: url(c:/Users/skyee/Downloads/background.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    color: white;
+    font-size: 22px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 90px;
+    background-color: transparent;
+}
+
+header nav a {
+    font-size: 26px;
+    margin-left: 78px;
+    color: white;
+    transition: .3s;
+}
+
+header nav .active,
+header nav a:hover {
+    color: #4ee8ff;
+}
+
+.Home h1 {
+    position: absolute;
+    font-size: 105px;
+    color: white;
+    z-index: 99;
+    -webkit-text-stroke: 3px black;
+    font-weight: 100;
+    transition: transform 0.5s ease-out;
+}
+
+.Home img {
+    position: absolute;
+    pointer-events: none;
+    height: 100%;
+}
+
+.stars {
+    width: 100%;
+    left: 0;
+    transform-origin: 50% 55%;
+}
+
+.About {
+    min-height: 100vh;
+    background-color: #06001b;
+    color: white;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+}
+
+.About h1 {
+    font-size: 50px;
+}
+
+.About p {
+    font-size: 17px;
+}
+
+.Services {
+    min-height: 100vh;
+    background-color: #230a43;
+    color: white;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+}
+
+.Services h1 {
+    font-size: 50px;
+}
+
+.Services p {
+    font-size: 17px;
+}
+
+.Contact {
+    min-height: 100vh;
+    background-color: #501f6a;
+    color: white;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+}
+
+.Contact h1 {
+    font-size: 50px;
+}
+
+.Contact p {
+    font-size: 17px;
+}
+
+.Login {
+    min-height: 100vh;
+    background-color: #59317a;
+    color: white;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+}
+
+.Login h1 {
+    font-size: 50px;
+}
+
+.Login p {
+    font-size: 17px;
+}
