@@ -15,7 +15,7 @@ html {
 .Home {
     position: relative;
     min-height: 100vh;
-    background-image: url(./background.png);
+    background-image: url(Users/skyee/Downloads/background.png);
     background-size: cover;
     background-position: center;
     display: flex;
