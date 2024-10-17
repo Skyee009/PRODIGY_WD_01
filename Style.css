@@ -67,15 +67,20 @@ header nav a:hover {
     height: 100%;
 }
 
+.responsive-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Ensures the image never grows beyond its natural size */
+}
+
 .stars {
     width: 100%;
     left: 0;
     transform-origin: 50% 55%;
 }
 
-.About {
+.About, .Services, .Contact, .Login {
     min-height: 100vh;
-    background-color: #06001b;
     color: white;
     padding: 50px 100px;
     display: flex;
@@ -84,67 +89,95 @@ header nav a:hover {
     gap: 80px;
 }
 
-.About h1 {
-    font-size: 50px;
-}
-
-.About p {
-    font-size: 17px;
+.About {
+    background-color: #06001b;
 }
 
 .Services {
-    min-height: 100vh;
     background-color: #230a43;
-    color: white;
-    padding: 50px 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 80px;
-}
-
-.Services h1 {
-    font-size: 50px;
-}
-
-.Services p {
-    font-size: 17px;
 }
 
 .Contact {
-    min-height: 100vh;
     background-color: #501f6a;
-    color: white;
-    padding: 50px 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 80px;
-}
-
-.Contact h1 {
-    font-size: 50px;
-}
-
-.Contact p {
-    font-size: 17px;
 }
 
 .Login {
-    min-height: 100vh;
     background-color: #59317a;
-    color: white;
-    padding: 50px 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 80px;
 }
 
-.Login h1 {
+.About h1, .Services h1, .Contact h1, .Login h1 {
     font-size: 50px;
 }
 
-.Login p {
+.About p, .Services p, .Contact p, .Login p {
     font-size: 17px;
 }
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+
+    header nav a {
+        font-size: 18px;
+        margin-left: 20px;
+    }
+
+    .Home h1 {
+        font-size: 60px;
+    }
+
+    .Home img {
+        width: 100%;
+        height: auto; /* Ensures the image scales properly */
+    }
+
+    .About, .Services, .Contact, .Login {
+        padding: 20px 30px;
+    }
+
+    .About h1, .Services h1, .Contact h1, .Login h1 {
+        font-size: 36px;
+    }
+
+    .About p, .Services p, .Contact p, .Login p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    header nav a {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    .Home h1 {
+        font-size: 40px;
+    }
+
+    .Home img {
+        width: 100%;
+        height: auto; /* Ensures the image scales properly */
+    }
+
+    .About, .Services, .Contact, .Login {
+        padding: 15px 20px;
+    }
+
+    .About h1, .Services h1, .Contact h1, .Login h1 {
+        font-size: 28px;
+    }
+
+    .About p, .Services p, .Contact p, .Login p {
+        font-size: 14px;
+    }
+}
+
+
